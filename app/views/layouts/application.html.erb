@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Raidtime</title>
+    <title>Raid Time</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,22 @@
   </head>
 
   <body>
+    <header class="row container">
+      <div class="col">
+        Logo
+      </div>
+      <div class="col">
+        World of Warcraft
+        <br />
+        Raid Times
+      </div>
+      <div class="col log_in_link">
+        <%= link_to 'Log In', '#' %>
+      </div>
+    </header>
+
+    <br class="clear" />
+
     <%= yield %>
   </body>
 </html>
